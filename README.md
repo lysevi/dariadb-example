@@ -1,5 +1,5 @@
 # dariadb-example
-example for dariadb
+example for dariadb (https://github.com/lysevi/dariadb)
 
 #build
 ```shell
