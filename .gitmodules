@@ -1,0 +1,3 @@
+[submodule "dariadb"]
+	path = dariadb
+	url = https://github.com/lysevi/dariadb
