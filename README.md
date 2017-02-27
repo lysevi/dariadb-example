@@ -5,6 +5,6 @@ example for dariadb
 ```shell
 $ git clone https://github.com/lysevi/dariadb-example
 $ cd dariadb-example
-$ git submodule --init --recursive
+$ git submodule update --init --recursive
 $ cmake .
 ```
