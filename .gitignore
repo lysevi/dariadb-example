@@ -4,6 +4,11 @@
 *.vcxproj
 *.filters
 *.suo
+*.pdb
+*.exp
+*.ilk
+*.log
+*.tlog
 CMakeCache.txt
 CMakeFiles/*
 build/*
@@ -36,3 +41,4 @@ build/*
 *.exe
 *.out
 *.app
+*.VC.VC.opendb
