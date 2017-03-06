@@ -98,14 +98,14 @@ int main(int argc, char **argv) {
 
 	// apply callback to interval
 	std::cout << "Callback in interval: " << std::endl;
-	std::unique_ptr<Callback> callback_ptr{ new Callback() };
-	storage->foreach(qi, callback_ptr.get());
-	callback_ptr->wait();
+	Callback callback;
+	storage->foreach(qi, &callback);
+	callback.wait();
 
 	// apply callback to values in timepoint
 	std::cout << "Callback in timepoint: " << std::endl;
-	storage->foreach(qp, callback_ptr.get());
-	callback_ptr->wait();
+	storage->foreach(qp, &callback);
+	callback.wait();
 
 
 	{ // query statistic for Id==0 in interval
